@@ -1,0 +1,37 @@
+[
+  {
+    "role": "Associate, Audit & Tax",
+    "company": "SME LLP",
+    "start": "2022",
+    "end": "Present",
+    "summary": "Lead on CRA reviews and GST/HST audits, payroll reconciliations, and financial reporting. Built clear client docs and automation for reconciliations.",
+    "skills": [
+      "Audit",
+      "HST/GST",
+      "Excel",
+      "Client Comms"
+    ]
+  },
+  {
+    "role": "Tax Associate (Seasonal)",
+    "company": "Intuit",
+    "start": "2020",
+    "end": "2021",
+    "summary": "Prepared personal tax returns during busy season and resolved filing issues.",
+    "skills": [
+      "T1",
+      "Client Support"
+    ]
+  },
+  {
+    "role": "Audit Intern",
+    "company": "PwC",
+    "start": "2019",
+    "end": "2019",
+    "summary": "Assisted on audit testing and sampling; documented exceptions and findings.",
+    "skills": [
+      "Audit Testing",
+      "Sampling"
+    ]
+  }
+]
