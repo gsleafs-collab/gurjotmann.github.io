@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gurjot Mann</title>
+  <meta name="description" content="Portfolio and resume of Gurjot Mann" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="#top">GM</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Gurjot Mann</h1>
+        <p class="subtitle">Accounting auditor, CPA (soon), and builder of tidy numbers.</p>
+        <div class="cta-row">
+          <a class="button" href="#projects">See Projects</a>
+          <a class="button ghost" href="#contact">Contact</a>
+        </div>
+        <div class="socials">
+          <!-- TODO: replace with your real links -->
+          <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:you@example.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>
+        Short intro about you. Keep it punchy, ~2–4 lines. Mention specialties, wins,
+        and what you’re looking for next.
+      </p>
+
+      <!-- Optional LinkedIn Profile Badge (uncomment after you customize) -->
+      <!--
+      <div class="linkedin-badge">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <div class="badge-base LI-profile-badge"
+            data-locale="en_US"
+            data-size="medium"
+            data-theme="light"
+            data-type="VERTICAL"
+            data-vanity="your-handle"
+            data-version="v1">
+        </div>
+      </div>
+      -->
+    </section>
+
+    <section id="experience" class="container section">
+      <h2>Experience</h2>
+      <div id="experience-list" class="cards"></div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div id="projects-list" class="cards"></div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">/in/your-handle</a></p>
+          <p>GitHub: <a href="https://github.com/your-handle" target="_blank" rel="noopener">@your-handle</a></p>
+        </div>
+        <form id="contact-form" class="contact-form" onsubmit="return false;">
+          <label>Name <input required type="text" id="name" placeholder="Your name"></label>
+          <label>Email <input required type="email" id="email" placeholder="you@example.com"></label>
+          <label>Message <textarea required id="message" rows="4" placeholder="Write your message"></textarea></label>
+          <button class="button" id="sendBtn">Copy message</button>
+          <p class="hint">This just copies your message to your clipboard so you can email it.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gurjot Mann. Built with vanilla HTML/CSS/JS, GitHub Pages-ready.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
