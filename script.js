@@ -41,11 +41,10 @@ async function loadData() {
   try {
     const [expRes, projRes] = await Promise.all([
       fetch('data/experience.json'),
-      fetch('data/projects.json')
-    ]);
+     ]);
     const exp = await expRes.json().catch(()=>[]);
     const projects = await projRes.json().catch(()=>[]);
-    renderExperience(exp); renderProjects(projects);
+    renderExperience(exp); 
   } catch (e) { console.warn('Data load error', e); }
 }
 function renderExperience(items){
