@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GST/HST Audit Toolkit",
+    "summary": "Checklists and templates that speed up first\u2011round document requests and exception reviews.",
+    "link": "",
+    "tags": [
+      "Process",
+      "Templates"
+    ],
+    "image": "assets/project1.jpg"
+  },
+  {
+    "name": "Payroll Reconciliation Helper",
+    "summary": "Excel + notes package that maps T4/T4A/CPP/EI to GL balances for faster reviews.",
+    "link": "",
+    "tags": [
+      "Excel",
+      "Automation"
+    ],
+    "image": "assets/project2.jpg"
+  }
+]

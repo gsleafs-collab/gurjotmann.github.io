@@ -1,0 +1,69 @@
+[
+  {
+    "role": "Associate",
+    "company": "SME LLP",
+    "start": "Nov 2023",
+    "end": "Present, Full-time",
+    "summary": "Handling compilation engagements; corporate, trust, and personal tax returns; T4/T5 preparation; investment account reconciliations; ITC reviews; and CRA audit assistance.",
+    "skills": [
+      "CaseWare",
+      "CaseView",
+      "TaxPrep",
+      "Corporate Tax",
+      "Trust Tax",
+      "Personal Tax",
+      "ITCs",
+      "CRA Audits"
+    ]
+  },
+  {
+    "role": "Staff Accountant",
+    "company": "Farnham Accountants & Advisors",
+    "start": "Nov 2022",
+    "end": "Oct 2023",
+    "summary": "Prepared working paper files in CaseWare, reconciled investment accounts, performed foreign currency translations, and supported personal, corporate, and trust tax compliance including T4/T5, foreign reporting (T1134, T1135, T106), and elections in TaxPrep.",
+    "skills": [
+      "CaseWare",
+      "TaxPrep",
+      "Investments",
+      "FX Translation",
+      "T1134",
+      "T1135",
+      "T106"
+    ]
+  },
+  {
+    "role": "Senior Tax Associate",
+    "company": "Intuit (TurboTax)",
+    "start": "Jan 2021",
+    "end": "May 2021; Jan 2022 \u2013 May 2022",
+    "summary": "Supported tax experts in preparing returns and client communications. Managed admin tasks, document compilation, and customer service. Helped troubleshoot and resolve complex tax queries.",
+    "skills": [
+      "Personal Tax",
+      "Client Service"
+    ]
+  },
+  {
+    "role": "Tax Assembler",
+    "company": "PwC",
+    "start": "Apr 2019",
+    "end": "Mar 2020 \u2013 Apr 2020",
+    "summary": "Supported the H1B process during tax season. Supervised team members and assembled 2,000+ electronic files. Reviewed legal documents and formatted reports with MS Office and Adobe.",
+    "skills": [
+      "Process",
+      "QA",
+      "Team Lead"
+    ]
+  },
+  {
+    "role": "Volunteer Preparer",
+    "company": "York University Tax Clinic",
+    "start": "2018",
+    "end": "2020",
+    "summary": "Prepared student and low\u2011income individual returns and educated clients on basic tax matters.",
+    "skills": [
+      "Personal Tax",
+      "Client Education"
+    ]
+  }
+]
