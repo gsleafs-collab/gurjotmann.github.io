@@ -55,3 +55,20 @@ input,textarea{width:100%;background:#0f1016;border:1px solid var(--border);bord
 }
 
 
+
+@media (max-width: 760px) {
+  .nav {
+    height: auto;              /* allow it to grow with two lines */
+    flex-direction: column;    /* stack brand & links vertically */
+    align-items: flex-start;   /* left-align content */
+    padding: 8px 20px;         /* a bit of breathing room top/bottom */
+    row-gap: 4px;              /* small gap between brand and links */
+  }
+
+  .nav-links a {
+    margin-left: 0;            /* remove left margin in stacked mode */
+    margin-right: 12px;        /* small horizontal spacing instead */
+  }
+}
+
+
