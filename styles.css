@@ -53,24 +53,5 @@ input,textarea{width:100%;background:#0f1016;border:1px solid var(--border);bord
     padding: 0 32px; /* adds breathing room on left and right */
   }
 }
-@media(max-width:760px){
-  /* extra breathing room on the sides */
-  .container {
-    padding: 0 32px;
-  }
 
-  /* keep the header fully visible and fixed on mobile */
-  .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100; /* make sure it stays above everything */
-  }
-
-  /* push content down so it does not sit under the fixed nav */
-  body {
-    padding-top: 64px; /* matches your .nav height */
-  }
-}
 
