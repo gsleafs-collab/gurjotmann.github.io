@@ -39,7 +39,7 @@ async function loadExperience() {
     if (!Array.isArray(items) || !items.length) return;
     el.innerHTML = items.map(it => `
       <li class="tl-item reveal">
-        <span class="tl-date">${it.start} — ${it.end || 'Present'}</span>
+        <span class="tl-date">${it.start} - ${it.end || 'Present'}</span>
         <div class="tl-card">
           <h3 class="tl-role">${it.role}</h3>
           <p class="tl-company">${it.company}</p>
