@@ -441,10 +441,21 @@ img { max-width: 100%; display: block; }
 }
 .speaking-thumb {
   position: relative;
+  display: block;
+  width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--emerald-deep);
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
+.speaking-thumb iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+.speaking-thumb.playing { cursor: default; }
 .speaking-thumb img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform 0.4s ease;

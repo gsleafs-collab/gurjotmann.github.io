@@ -1,4 +1,4 @@
-// Footer year 
+// Footer year
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
@@ -56,6 +56,20 @@ async function loadExperience() {
   }
 }
 loadExperience();
+
+// Click-to-play YouTube embed (loads the player only when tapped)
+const facade = document.getElementById('video-facade');
+if (facade) {
+  facade.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/yeOSOrsjSUk?autoplay=1&rel=0';
+    iframe.title = 'York University speaker event featuring Gurjot Mann';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    facade.replaceChildren(iframe);
+    facade.classList.add('playing');
+  }, { once: true });
+}
 
 // Contact copy-to-clipboard helper
 const btn = document.getElementById('sendBtn');
