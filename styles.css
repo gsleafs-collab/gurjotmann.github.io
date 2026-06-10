@@ -202,13 +202,10 @@ img { max-width: 100%; display: block; }
   width: 100%; height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  background: var(--paper);
-  display: grid; place-items: center;
 }
 .hero-badge-inner img {
-  width: 78%; height: 78%;
-  object-fit: contain;
-  border-radius: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
