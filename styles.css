@@ -196,7 +196,6 @@ img { max-width: 100%; display: block; }
   padding: 5px;
   background: linear-gradient(135deg, var(--gold), var(--emerald), var(--gold));
   box-shadow: 0 10px 28px rgba(29, 38, 32, 0.18);
-  animation: spin 14s linear infinite;
 }
 .hero-badge-inner {
   width: 100%; height: 100%;
