@@ -40,22 +40,45 @@ async function loadExperience() {
     el.innerHTML = items.map(it => `
       <li class="tl-item reveal">
         <span class="tl-date">${it.start} - ${it.end || 'Present'}</span>
-        <div class="tl-card">
-          <h3 class="tl-role">${it.role}</h3>
+        <div class="tl-card expandable" role="button" tabindex="0" aria-expanded="false">
+          <h3 class="tl-role">${it.role} <span class="expand-chevron" aria-hidden="true">⌄</span></h3>
           <p class="tl-company">${it.company}</p>
-          <p class="tl-summary">${it.summary}</p>
-          ${it.skills && it.skills.length
-            ? `<div class="chips">${it.skills.map(s => `<span class="chip">${s}</span>`).join('')}</div>`
-            : ''}
+          <div class="expand-body">
+            <p class="tl-summary">${it.summary}</p>
+            ${it.skills && it.skills.length
+              ? `<div class="chips">${it.skills.map(s => `<span class="chip">${s}</span>`).join('')}</div>`
+              : ''}
+          </div>
         </div>
       </li>
     `).join('');
     observeReveals(el);
+    wireExpandables(el);
   } catch (e) {
     console.warn('Could not load experience data', e);
   }
 }
 loadExperience();
+
+// Expandable cards (experience, education, honors)
+function wireExpandables(root) {
+  (root || document).querySelectorAll('.expandable').forEach(card => {
+    if (card.dataset.wired) return;
+    card.dataset.wired = '1';
+    const toggle = () => {
+      const open = card.classList.toggle('open');
+      card.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+}
+wireExpandables();
 
 // Click-to-play YouTube embed (loads the player only when tapped)
 const facade = document.getElementById('video-facade');

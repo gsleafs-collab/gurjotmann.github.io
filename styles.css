@@ -336,7 +336,21 @@ img { max-width: 100%; display: block; }
 }
 .card h3 { font-family: var(--serif); font-size: 19px; font-weight: 500; line-height: 1.3; }
 .card p { color: var(--ink-soft); font-size: 14.5px; margin-top: 8px; }
-.card-mark { font-family: var(--serif); color: var(--gold); font-size: 22px; line-height: 1; margin-bottom: 12px; }
+/* ── Expandable cards ── */
+.expandable { cursor: pointer; user-select: none; }
+.expandable:focus-visible { outline: 2px solid var(--emerald); outline-offset: 3px; }
+.expand-body {
+  max-height: 0; overflow: hidden; opacity: 0;
+  transition: max-height 0.45s ease, opacity 0.3s ease;
+}
+.expandable.open .expand-body { max-height: 600px; opacity: 1; }
+.expand-chevron {
+  display: inline-block; margin-left: 4px;
+  font-size: 15px; color: var(--gold);
+  transition: transform 0.3s ease;
+  vertical-align: 3px;
+}
+.expandable.open .expand-chevron { transform: rotate(180deg); }
 
 /* ── Volunteering list ── */
 .vol-list { list-style: none; max-width: 760px; }
